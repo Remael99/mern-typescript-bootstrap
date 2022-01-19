@@ -8,17 +8,14 @@ export async function createSessionHandler(req:Request,res:Response){
       
      //validate password
      const user = await validatePassword(req.body)
-
      if(!user){
         return res.status(401).send("invalid email or password")
      }
 
      //create session
-
-     const session = createSession(user._id)
-
-     //access token
-
+      const session = createSession(user._id)
+     
+      //access token
 
      //refresh token
 
