@@ -11,6 +11,7 @@ export async function createUserHandler(req:Request<{},{},CreateUserInput['body'
       const user =  await createUser(req.body)
  
      
+      
       return res.send(omit(user.toJSON(),"password"))
 
     } catch (error:any) {
