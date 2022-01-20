@@ -7,7 +7,7 @@ import { UserDocument } from "./user.model"
 
 
 //instead ot type mongooose lib
-export interface SchemaDocument extends  mongoose.Document{
+export interface SessionDocument extends  mongoose.Document{
     user:UserDocument["_id"], 
     valid:boolean
     createdAt:Date

@@ -5,3 +5,6 @@
 .env
 .env.test
 
+#postman_collection
+
+/postman_collection.json
